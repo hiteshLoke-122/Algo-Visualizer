@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <style>
+        body{
+            background-color: #051622;
+            color: antiquewhite;
+        }
+        .heading{
+            max-width: 100%;
+            max-height: 10px;
+            padding-bottom: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card {
+            width: 190px;
+            height: 246px;
+            border-radius: 20px;
+            background: rgb(53, 52, 52);
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #fefefe;
+            transition: 0.5s ease-out;
+            overflow: visible;
+            backdrop-filter: blur(10px);
+            margin-left: 50px;
+            margin-right: 50px;
+            }
+
+            .card-details {
+            color: black;
+            height: 100%;
+            gap: .4em;
+            display: grid;
+            place-content: center;
+            }
+
+            .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #008bf8;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+            }
+
+            .text-body {
+            color: rgb(255, 251, 251);
+            text-align: center;
+            }
+
+            /*Text*/
+            .text-title {
+            font-size: 2.0em;
+            text-align: center;
+            font-weight: bold;
+            color:antiquewhite
+            }
+
+            .card-button a{
+                text-decoration: none;
+                color: antiquewhite;
+            }
+
+            .card:hover {
+            border-color: #008bf8;
+            box-shadow: 18px 4px 18px 4px rgba(255, 255, 255, 0.25);
+            }
+
+            .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+            }
+
+            .cont1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media (max-width: 768px) {
+            .cont1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 60%;
+                margin: 20px auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <h1>ALGO VISUALIZER</h1>
+    </header>
+    <div class="cont1">
+        <div class="card">
+            <div class="card-details">
+              <p class="text-title">Sorting Algorithm</p>
+              <p class="text-body">A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements.</p>
+            </div>
+            <button class="card-button"><a href="sortingalgos.html">Read More!!</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+              <p class="text-title">Searching Algorithm</p>
+              <p class="text-body">Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is stored.</p>
+            </div>
+            <button class="card-button"><a href="searching\searchingalgos.html">Read More!!</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+              <p class="text-title">Hashing Algorithm</p>
+              <p class="text-body">Hashing refers to the process of generating a fixed-size output from an input of variable size using the mathematical formulas known as hash functions.</p>
+            </div>
+            <button class="card-button"><a href="#">Read More!!</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+              <p class="text-title">Divide and Conqure</p>
+              <p class="text-body">Binary Search is a searching algorithm. In each step, the algorithm compares the input element x with the value of the middle element in the array. </p>
+            </div>
+            <button class="card-button"><a href="#">Read More!!</a></button>
+        </div>
+    </div>
+</body>
+</html>
